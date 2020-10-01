@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mzz.Dao.DeptDao">
+    <!--查询全部-->
+    <!--id可以自定义相当于方法名id是I唯一的-->
+    <!--预编译#{实体类里的字段名}-->
+    <select id="selectAll" resultType="Dept">
+        select * from  dept
+    </select>
+   <!-- <select id="selectOne" resultType="com.mzz.po.Emp">
+        select * from emp where emp_id=#{emp_id}
+    </select>-->
+   <!-- <select id="selectOne1" resultType="com.mzz.po.Emp">
+        select * from emp where emp_name=#{emp_name}
+    </select>-->
+    <insert id="insert" >
+        insert into dept (dept_name) values (#{dept_name});
+    </insert>
+    <!--删除-->
+    <delete id="delete"  >
+        delete  from  dept  where dept_id  =#{dept_id} ;
+    </delete>
+    <!--修改-->
+    <update id="update">
+        update dept set dept_name  =#{dept_name}  where dept_id=#{dept_id} ;
+    </update>
+</mapper>

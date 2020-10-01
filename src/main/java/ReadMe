@@ -1,0 +1,30 @@
+1.什么是框架？
+1.1框:约束
+1.2.架:基础
+
+2.什么是MyBatis?
+ 2.1是一款优秀的持久化层框架
+   -什么是持久化？
+   把数据从瞬时状态转换为持久状态的过程称之为持久化
+   (把java对象保存到数据库或者是其他数据文件的过程)
+ 2.是一个半自动的ORM框架
+   -什么是ORM
+   O:Object
+   R:Relation
+   M:Mapping
+   对象关系映射
+   ORM可以向操作对象一样操作数据库
+   什么是对象关系映射
+   可以让数据库中的字段和Java中对象的属性一一对应
+ 3.它支持自定义SQl、存储过程以及高级映射,MyBaits几乎免除了所以的JDBC代码
+ 以及设置参数和获取结果集的工作。MyBatis可以通过简单的XML文件或者是注解来配置和映射原始类型、接口和实体类(JavaBean)
+-入门
+   安装
+     1.使用mybatis 只需要将 mybatis_x.x.x.jar导入项目即可
+     2.使用maven构建项目只需要将下面的依赖放入pom.xml文件中
+     3.从XML文件中构建sqlsessionFactory
+      1.编写mybatis的配置文件
+使川
+1.加载mybatis的配置文件
+2.创建SqlsessionFactory工厂
+
